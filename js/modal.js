@@ -18,13 +18,7 @@ modalBtn1.addEventListener("click", () => {
 })
 
  
-modal1.addEventListener("click", (event) => {
-  const modalContent = event.target.closest(".modal__inner")
 
-  if (!modalContent) {
-    modal1.style.display = ""
-  }
-})
 
 
 // "Заказать курс", модальное окно
@@ -38,13 +32,6 @@ modalBtn2.addEventListener("click", () => {
 })
 
  
-modal2.addEventListener("click", (event) => {
-  const modalContent = event.target.closest(".modal__inner")
-
-  if (!modalContent) {
-    modal2.style.display = ""
-  }
-})
 
 
 
@@ -78,7 +65,7 @@ createCloseModalTrigger();
 
 
 // закрытие 
-modal1.addEventListener('click', e => {
+/*modal1.addEventListener('click', e => {
   const modalContent = e.target.closest('.modal__inner');
 
   if (!modalContent) closeModal();
@@ -92,7 +79,7 @@ modal2.addEventListener('click', e => {
   const modalContent = e.target.closest('.modal__inner');
 
   if (!modalContent) closeModal();
-});
+});*/
 
 function closeModal() {
   modal2.style.display = '';
