@@ -8,41 +8,41 @@ console.log(modal);*/
 
 
 // "Оставить заявку", модальное окно
-/*const modalBtn = document.querySelector(".modal__button")
-const modal = document.querySelector(".modal")
+const modalBtn1 = document.querySelector(".modal__button")
+const modal1 = document.querySelector(".modal")
 
-modalBtn.addEventListener("click", () => {
+modalBtn1.addEventListener("click", () => {
     
     //console.log("click");
-    modal.style.display = "flex";
+    modal1.style.display = "flex";
 })
 
  
-modal.addEventListener("click", (event) => {
+modal1.addEventListener("click", (event) => {
   const modalContent = event.target.closest(".modal__inner")
 
   if (!modalContent) {
-    modal.style.display = ""
+    modal1.style.display = ""
   }
-})*/
+})
 
 
 // "Заказать курс", модальное окно
-const modalBtn = document.querySelector(".course__button")
-const modal = document.querySelector(".modal")
+const modalBtn2 = document.querySelector(".course__button")
+const modal2 = document.querySelector(".modal")
 
-modalBtn.addEventListener("click", () => {
+modalBtn2.addEventListener("click", () => {
     
     //console.log("click");
-    modal.style.display = "flex";
+    modal2.style.display = "flex";
 })
 
  
-modal.addEventListener("click", (event) => {
+modal2.addEventListener("click", (event) => {
   const modalContent = event.target.closest(".modal__inner")
 
   if (!modalContent) {
-    modal.style.display = ""
+    modal2.style.display = ""
   }
 })
 
@@ -78,12 +78,22 @@ createCloseModalTrigger();
 
 
 // закрытие 
-modal.addEventListener('click', e => {
+modal1.addEventListener('click', e => {
   const modalContent = e.target.closest('.modal__inner');
 
   if (!modalContent) closeModal();
 });
 
 function closeModal() {
-  modal.style.display = '';
+  modal1.style.display = '';
+}
+
+modal2.addEventListener('click', e => {
+  const modalContent = e.target.closest('.modal__inner');
+
+  if (!modalContent) closeModal();
+});
+
+function closeModal() {
+  modal2.style.display = '';
 }
