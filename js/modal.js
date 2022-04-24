@@ -64,7 +64,7 @@ function createCloseModalTrigger() {
 createCloseModalTrigger();
 
 
-// закрытие 
+// закрытие через клик в любое место
 /*modal1.addEventListener('click', e => {
   const modalContent = e.target.closest('.modal__inner');
 
@@ -81,6 +81,8 @@ modal2.addEventListener('click', e => {
   if (!modalContent) closeModal();
 });*/
 
+
+// закрытие через X
 function closeModal() {
   modal2.style.display = '';
 }
