@@ -54,7 +54,7 @@ const secondsBlock = document.querySelector(".timer__seconds")
 
 const updateTimer = () => {
   const date = new Date ()
-const dateDeadline = new Date("27 april 2022").getTime()
+const dateDeadline = new Date("1 september 2022").getTime()
 const timeRemaining = (dateDeadline - date) / 1000
 
 
@@ -85,7 +85,7 @@ updateTimer()
 //setInterval(updateTimer, 500)
 
 /*const date = new Date().getTime()
-const dateDeadline = new Date("27 april 2022").getTime()
+const dateDeadline = new Date("1 september 2022").getTime()
 
 console.log(date);
 console.log(dateDeadline);
