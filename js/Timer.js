@@ -147,7 +147,7 @@ const numworddays = (value, words) => {
 // обратный отсчёт 
 const updateTimer = () => {
   const date = new Date ()
-const dateDeadline = new Date("27 april 2022").getTime()
+const dateDeadline = new Date("1 september 2022").getTime()
 const timeRemaining = (dateDeadline - date) / 1000
 
 
